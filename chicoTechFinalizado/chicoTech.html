@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Chico Tech Serviços</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/chicoTechCss.css" media="all" />
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/chicoTechJavaScript.js"></script>
+
+    <meta name="author" content="Chico" />
+    <meta name="description" content="Site de Compra e Venda de Informática" />
+    <meta name="keywords" content="informática, tech, venda" />
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <h1> Chico Tech Serviços </h1>
+
+    <div>
+        Data Atual:
+        <p id="data"></p>
+        <script>
+            dataAtual()
+        </script>
+    </div>
+
+    <div id="utensilios">
+        <h2> Utensílios </h2>
+
+        <div>
+            <ol>
+                <li>Lâmpada</li>
+                <ul>
+                    <li>Lâmpada LED</li>
+                </ul>
+                <li>Bluetooth</li>
+                <li>HD</li>
+                <li>SSD</li>
+                <li>Disquete</li>
+            </ol>
+        </div>
+
+        <h3> Lâmpada </h3>
+
+        <p align="left">
+            É um Utensílio Doméstico
+        </p>
+
+        <img id="lampada" src="imagens/lampada.jpg" onclick="ligarLampada()" />
+    </div>
+
+    <div>
+        <table border="1" align="center">
+            <tr>
+                <td>Nome</td>
+                <td>Email</td>
+                <td>CPF</td>
+            </tr>
+            <tr>
+                <td>Wallace</td>
+                <td>wallace@uena.br</td>
+                <td>12345678901</td>
+            </tr>
+        </table>
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+
+    <div align="center">
+        <form action="javascript:;" onsubmit="realizarCadastro()">
+            <div>
+                <label>Nome: </label>
+                <input type="text" id="nome"></input>
+            </div>
+            <div>
+                <label>Email: </label>
+                <input type="email" id="email"></input>
+            </div>
+            <div>
+                <label>CPF: </label>
+                <input type="text" id="cpf"></input>
+            </div>
+            <div>
+                <button type="submit">Efetuar Cadastro</button>
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <a href="http://sis.sig.uema.br/sigaa/verTelaLogin.do"> SIGUEMA </a>
+    </div>
+
+
+    <button type="button" onclick="apresentarNome()">Perguntar nome da pessoa</button>
+</body>
+
+</html>
